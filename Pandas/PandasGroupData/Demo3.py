@@ -1,5 +1,5 @@
-#The groupby() method is used in Pandas to split the object.
-# We can define groupby() as grouping the rows/columns into specific groups.
+#View the group
+
 import pandas as pd
 data={
     'Player':['A','B','C','D','E','A','B','F'],
@@ -10,9 +10,8 @@ data={
 df=pd.DataFrame(data)
 print("Records=\n",df)
 
-#Group the data on Player Value
+#Group by player view the groups
 newdf=df.groupby('Player')
+print(newdf.groups)
 
-#Dsiplay the First Entry
-print("\n",newdf.first())
 

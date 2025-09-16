@@ -1,5 +1,5 @@
-#The groupby() method is used in Pandas to split the object.
-# We can define groupby() as grouping the rows/columns into specific groups.
+#Get the Size of each Group
+import numpy as np
 import pandas as pd
 data={
     'Player':['A','B','C','D','E','A','B','F'],
@@ -10,9 +10,10 @@ data={
 df=pd.DataFrame(data)
 print("Records=\n",df)
 
-#Group the data on Player Value
+#Group ny player
 newdf=df.groupby('Player')
 
-#Dsiplay the First Entry
-print("\n",newdf.first())
+#The Agg() to perform Aggregation
+#Use np.size to get the size of each group
+print(newdf.agg(np.size))
 

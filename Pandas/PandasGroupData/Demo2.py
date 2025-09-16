@@ -16,3 +16,15 @@ newdf=df.groupby('Player')
 #Dsiplay the First Entry
 print("\n",newdf.first())
 
+#Group by Players
+for name, group in newdf:
+    print(name)
+    print(group)
+
+#Group by Rank
+newdf1=df.groupby('Rank')
+
+for Rank,group in newdf1:
+    print(Rank)
+    print(group)
+
