@@ -25,3 +25,9 @@ print(f"{str_bool_false}")
 float=15.55
 float_int=int(float)
 print(float_int)
+
+#print()
+print("apple","banana",sep=' ')
+print("apple","banana",sep='-')
+print("apple is super",end=' ')
+print("apple is sweet")
