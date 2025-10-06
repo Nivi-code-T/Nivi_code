@@ -22,7 +22,6 @@ class Application(tk.Frame):
      self.resultLabel.pack(side="left")
      self.calculateButton.pack(side="left")
 
-
    def calculate_sum(self):
      try:
         num1 = float(self.firstNumberEntry.get())
@@ -37,6 +36,8 @@ app = Application()
 app.master.title("Summator")
 app.master.minsize(width=300, height=50)
 app.mainloop()
+
+
 
 
 
